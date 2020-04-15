@@ -7,7 +7,7 @@ pipeline {
     } //agent
     stages {
         stage("Check hostname of docker container") {
-            step {
+            steps {
                 sh """
                     cat /etc/hostname
                 """    
