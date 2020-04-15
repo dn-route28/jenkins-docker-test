@@ -3,8 +3,8 @@ pipeline {
         docker {
             image 'centos'
             label 'generic'
-        }
-    }
+        } //docker
+    } //agent
     stages {
         stage("Check hostname of docker contaniner") {
             step {
